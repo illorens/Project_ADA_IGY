@@ -17,7 +17,6 @@ We also need information on the income and purchasing power of American people a
 Finally, we will need a dataset that makes the correspondences between US cities and counties or states. We will use the United States Cities Database (https://simplemaps.com/data/us-cities) available on CSV format and including the cities' county, state and population. 
 
 # A list of internal milestones up until project milestone 2
-Add here a sketch of your planning for the next project milestone.
 Here is a tentative planning for the next project milestone: 
 
 1. Clean the Open Food Facts database and select only the information relevant for our project
