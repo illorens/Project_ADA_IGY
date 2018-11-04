@@ -37,7 +37,7 @@ of this dataset. Its size is 1.6 GB.
 We also need information on the income and purchasing power of French people according to their
 place of residence. We decided to use the public dataset IRCOM: Income Tax per Town
 (https://www.impots.gouv.fr/portail/statistiques/, then click on "Bases de données", then click
-on "Impôt sur le revenu par commune (IRCOM), direct link to the 2017 data:
+on "Impôt sur le revenu par commune (IRCOM)", direct link to the 2017 data:
 https://www.impots.gouv.fr/portail/www2/fichiers/statistiques/base_de_donnees/ircom/ircom_2017_revenus_2016.zip
 ). This dataset includes the aggregated income per town, department, and region in France. It is
 in XLSX format.
@@ -52,7 +52,7 @@ Here is a tentative planning for the next project milestone:
 5. Explore links between food quality, food availability and social class
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+Do you know where we can find data about the obesity rates in France ? Best would be to have the data aggregated as for the IRCOM dataset, but even having it per department or region could be interesting for our project.
 
 
 Project Organization
