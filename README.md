@@ -51,7 +51,7 @@ Here is a tentative planning for the next project milestone:
 4. Observe the economic level of French people according to the geographic location
 5. Explore links between food quality, food availability and social class
 
-# Questions for TAa
+# Questions for TAs
 Do you know where we can find data about the obesity rates in France ? Best would be to have the data aggregated as for the IRCOM dataset, but even having it per department or region could be interesting for our project.
 
 
