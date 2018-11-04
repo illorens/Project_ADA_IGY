@@ -19,12 +19,12 @@ for this part of the world.
 
 # Research questions
 - How can we combine nutritional values such as sugar or fat content, energy and nutrition score in
-order to acquire a metric that indicates the obesogenic level of each food item?
-- Is it possible to infer a prediction on obesity and health given our current data?
-- What criteria should be used to separate the two ( or more) regions with different socio-economic
-environment?
-- Is there really a difference in product comsumption between these regions? and if there is, can it
-be related to the distance traveled by the product (influencing price and availability)?
+order to acquire a metric that indicates the obesogenic level of each food item ?
+- Is it possible to infer a prediction on obesity and health given our current data ?
+- What criteria should be used to separate the two (or more) regions with different socio-economic
+environments ?
+- Is there really a difference in product comsumption between these regions ? If so, can it
+be related to the distance traveled by the product (influencing price and availability) ?
 
 # Dataset
 
