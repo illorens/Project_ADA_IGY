@@ -186,7 +186,7 @@ latex_documents = [
     ('index',
      'Project_ADA_IGY.tex',
      u'Projet Documentation',
-     u"Guillaume Vizier", 'manual'),
+     u"Icíar Lloréns Jover, Guillaume Vizier and Yassine Zouaghi", 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -216,7 +216,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'Project_ADA_IGY', u'Projet Documentation',
-     [u"Guillaume Vizier"], 1)
+     [u"Icíar Lloréns Jover, Guillaume Vizier and Yassine Zouaghi"], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -230,7 +230,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     ('index', 'Project_ADA_IGY', u'Projet Documentation',
-     u"Guillaume Vizier", 'Projet',
+     u"Icíar Lloréns Jover, Guillaume Vizier and Yassine Zouaghi", 'Projet',
      'Project for the ADA lecture at the EPFL, 2018.', 'Miscellaneous'),
 ]
 
