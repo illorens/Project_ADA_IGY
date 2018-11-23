@@ -35,12 +35,12 @@ format of this Dataset is CSV, which means we can use the Pandas functionalities
 of this dataset. Its size is 1.6 GB.
 
 We also need information on the income and purchasing power of French people according to their
-place of residence. We decided to use the public dataset IRCOM: Income Tax per Town
-(https://www.impots.gouv.fr/portail/statistiques/, then click on "Bases de données", then click
-on "Impôt sur le revenu par commune (IRCOM)", direct link to the 2017 data:
-https://www.impots.gouv.fr/portail/www2/fichiers/statistiques/base_de_donnees/ircom/ircom_2017_revenus_2016.zip
-). This dataset includes the aggregated income per town, department, and region in France. It is
-in XLSX format.
+place of residence. We decided to use the public dataset available here: https://www.insee.fr/fr/statistiques/3560121. This dataset includes several poverty indicators, aggregated per town in France. The data refers
+to the year 2015. It is in XLSX format.
+
+We linked the cities to their administrative zones (arrondissements, departments, regions) using this dataset: https://www.insee.fr/fr/information/2028028.
+
+To draw our maps, we used the data available at this address: https://github.com/gregoiredavid/france-geojson.
 
 # A list of internal milestones up until project milestone 2
 Here is a tentative planning for the next project milestone: 
