@@ -56,7 +56,7 @@ layout: default
           {%- for project in site.projects -%}
           {% assign ws = '' %}
           <div class="col-12 portfolio-item">
-            <a class="portfolio-link col-4-md" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
+            <a class="portfolio-link col-md-4" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -64,7 +64,7 @@ layout: default
               </div>
               <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
             </a>
-            <div class="portfolio-caption col-8-md">
+            <div class="portfolio-caption col-md-8">
               <h2 class="text-uppercase">{{ project.title }}</h2>
               <p class="text-muted">{{ project.category }}</p>
               <p class="item-intro text-muted">{{ project.description }}</p>
