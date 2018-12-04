@@ -47,6 +47,7 @@
       background-color: $white;
       display: inline-block;
       vertical-align: middle;
+      float: right;
       h4 {
         margin: 0;
         text-transform: none;
@@ -58,6 +59,9 @@
         @include serif-font;
       }
     }
+  }
+  &.inverted .portfolio-item .portfolio-caption {
+      float: left !important;
   }
   * {
     z-index: 2;
