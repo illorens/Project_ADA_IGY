@@ -59,9 +59,9 @@
         @include serif-font;
       }
     }
-  }
-  &.inverted .portfolio-item .portfolio-caption {
-      float: left !important;
+    &.inverted .portfolio-caption {
+        float: left !important;
+    }
   }
   * {
     z-index: 2;
