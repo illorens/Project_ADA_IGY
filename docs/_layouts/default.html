@@ -41,13 +41,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            {%- for link in site.data.default.nav -%}
+            {%- for link in site.projects -%}
             {% assign ws = '' %}
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
+              <a class="nav-link js-scroll-trigger" href="#slide{{ link.id | replace: '/projects/', '' }}">{{ link.title_url }}</a>
             </li>
             {%- endfor -%}
           {% assign ws = '' %}
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -105,7 +108,7 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">{{ project.title }}</h2>
@@ -113,11 +116,13 @@
                   <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image }}" alt="">
                   {% assign ws = '' %}
                   {{- project.content -}}
-                  {% assign ws = '' %}                  <ul class="list-inline">
-                    <li>{{ site.data.default.modal.date-string }}{{ project.date | date: "%B %Y" }}</li>
-                    <li>{{ site.data.default.modal.client-string }}{{ project.client }}</li>
-                    <li>{{ site.data.default.modal.category-string }}{{ project.category }}</li>
-                  </ul>
+                  {% assign ws = '' %}
+
+                  <div>
+                      {%- for image in project.bottom_images -%}
+                      <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6 mx-auto">
+                      {%- endfor -%}
+                  </div>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="{{ site.data.default.modal.close-icon }}"></i>
                     {{ site.data.default.modal.close-string }}</button>

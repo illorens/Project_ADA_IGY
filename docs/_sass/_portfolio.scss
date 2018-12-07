@@ -5,13 +5,12 @@
     margin: 0 0 15px;
     .portfolio-link {
       position: relative;
-      display: block;
-      max-width: 400px;
+      display: inline-block;
       margin: 0 auto;
       cursor: pointer;
       .portfolio-hover {
         position: absolute;
-        width: 100%;
+        width: calc(100% - 30px);
         height: 100%;
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
@@ -41,11 +40,17 @@
       }
     }
     .portfolio-caption {
-      max-width: 400px;
-      margin: 0 auto;
+      //max-width: 400px;
+      //margin: 0 auto;
       padding: 25px;
-      text-align: center;
+      //text-align: center;
       background-color: $white;
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+      h2 {
+          text-align: center;
+      }
       h4 {
         margin: 0;
         text-transform: none;
@@ -56,6 +61,9 @@
         margin: 0;
         @include serif-font;
       }
+    }
+    &.inverted .portfolio-caption {
+        float: left !important;
     }
   }
   * {
@@ -101,6 +109,11 @@
     }
     button {
       cursor: pointer;
+    }
+    .modal-body > img, .modal-body > p {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
   }
   .close-modal {
