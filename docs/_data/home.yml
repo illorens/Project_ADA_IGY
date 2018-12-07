@@ -1,6 +1,6 @@
 intro:
-  lead-in: "Welcome To Our Studio!"
-  heading: It's Nice To Meet You
+  lead-in: "Welcome To Our Data Story!"
+  heading: Let's talk about food
   btn: Tell Me More
 
 portfolio:
@@ -11,16 +11,16 @@ team:
   heading: Our Amazing Team
   subheading: Lorem ipsum dolor sit amet consectetur.
   members:
-    - name: Kay Garland
-      role: Lead Designer
+    - name: Icíar Lloréns Jover
+      role: Lead Thinker
       img: img/team/1.jpg
-        
-    - name: Larry Parker
-      role: Lead Marketer
+
+    - name: Yassine Zouaghi
+      role: Lead Grapher
       img: img/team/2.jpg
 
-    - name: Diana Pertersen
-      role: Lead Developer
+    - name: Guillaume Vizier
+      role: Lead Tinkerer
       img: img/team/3.jpg
 
   text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.

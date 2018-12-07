@@ -23,4 +23,4 @@ modal:
   client-string: 'Client: '
   category-string: 'Category: '
   close-icon: 'fa fa-times'
-  close-string: 'Close Project'
+  close-string: 'Back to the data story'
