@@ -44,12 +44,12 @@
             {%- for link in site.projects -%}
             {% assign ws = '' %}
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#slide{{ link.id }}">{{ link.title }}</a>
+              <a class="nav-link js-scroll-trigger" href="#slide{{ link.id | replace: '/projects/', '' }}">{{ link.title_url }}</a>
             </li>
             {%- endfor -%}
           {% assign ws = '' %}
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">{{ Team }}</a>
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
           </ul>
         </div>
