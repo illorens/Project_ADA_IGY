@@ -41,13 +41,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            {%- for link in site.data.default.nav -%}
+            {%- for link in site.projects -%}
             {% assign ws = '' %}
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
+              <a class="nav-link js-scroll-trigger" href="#slide{{ link.id }}">{{ link.title }}</a>
             </li>
             {%- endfor -%}
           {% assign ws = '' %}
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">{{ Team }}</a>
+            </li>
           </ul>
         </div>
       </div>
