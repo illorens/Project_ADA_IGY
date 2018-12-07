@@ -66,16 +66,18 @@ layout: default
             </a>
             <div class="portfolio-caption col-md-8">
               <h2 class="text-uppercase">{{ project.title }}</h2>
-              <p class="text-muted">{{ project.category }}</p>
-              <p class="item-intro text-muted">{{ project.description }}</p>
+              <!--p class="text-muted">{{ project.category }}</p-->
+              {%- if project.question -%}
+              <p class="item-intro text-muted">{{ project.question }}</p>
+              {%- endif -%}
                   {% assign ws = '' %}
                   {{- project.content -}}
                   {% assign ws = '' %}
-                  <ul class="list-inline">
+                  <!--ul class="list-inline">
                     <li>{{ site.data.default.modal.date-string }}{{ project.date | date: "%B %Y" }}</li>
                     <li>{{ site.data.default.modal.client-string }}{{ project.client }}</li>
                     <li>{{ site.data.default.modal.category-string }}{{ project.category }}</li>
-                  </ul>
+                  </ul-->
             </div>
           </div>
           {%- endfor -%}
