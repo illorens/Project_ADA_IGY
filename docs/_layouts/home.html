@@ -71,7 +71,9 @@ layout: default
               <p class="item-intro text-muted">{{ project.question }}</p>
               {%- endif -%}
                   {% assign ws = '' %}
-                  {{- project.content -}}
+                  {%- if project.description -%}
+                  {{- project.description -}}
+                  {%- endif -%}
                   {% assign ws = '' %}
                   <!--ul class="list-inline">
                     <li>{{ site.data.default.modal.date-string }}{{ project.date | date: "%B %Y" }}</li>
