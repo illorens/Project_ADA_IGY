@@ -2,18 +2,6 @@ brand:
   name: Start Bootstrap
 menu-string: Menu
 
-nav:
-  - title: Services
-    url: '#services'
-  - title: Portfolio
-    url: '#portfolio'
-  - title: About
-    url: '#about'
-  - title: Team
-    url: '#team'
-  - title: Contact
-    url: '#contact'
-
 copyright: Copyright &copy; Your Website 2018
 
 social-buttons:
@@ -35,4 +23,4 @@ modal:
   client-string: 'Client: '
   category-string: 'Category: '
   close-icon: 'fa fa-times'
-  close-string: 'Close Project'
+  close-string: 'Back to the data story'
