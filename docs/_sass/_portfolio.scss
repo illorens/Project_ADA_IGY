@@ -43,11 +43,14 @@
       //max-width: 400px;
       //margin: 0 auto;
       padding: 25px;
-      text-align: center;
+      //text-align: center;
       background-color: $white;
       display: inline-block;
       vertical-align: middle;
       float: right;
+      h2 {
+          text-align: center;
+      }
       h4 {
         margin: 0;
         text-transform: none;
