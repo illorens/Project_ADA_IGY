@@ -108,7 +108,7 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">{{ project.title }}</h2>
@@ -119,7 +119,7 @@
                   {% assign ws = '' %}
 
                   <div>
-                      {%- for image in project.bottom-images -%}
+                      {%- for image in project.bottom_images -%}
                       <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6 mx-auto">
                       {%- endfor -%}
                   </div>
