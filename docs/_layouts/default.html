@@ -117,6 +117,12 @@
                   {% assign ws = '' %}
                   {{- project.content -}}
                   {% assign ws = '' %}
+
+                  <div>
+                      {%- for image in project.bottom-images -%}
+                      <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6 mx-auto">
+                      {%- endfor -%}
+                  </div>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="{{ site.data.default.modal.close-icon }}"></i>
                     {{ site.data.default.modal.close-string }}</button>
