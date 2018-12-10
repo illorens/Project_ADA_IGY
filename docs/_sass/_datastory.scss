@@ -110,8 +110,13 @@
     button {
       cursor: pointer;
     }
-    .modal-body > img, .modal-body > p {
+    .modal-body > img {
         width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal-body > p {
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
