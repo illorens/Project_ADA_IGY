@@ -93,12 +93,12 @@
 
     {% assign ws = '' %}
     {%- if page.layout == 'home' -%}
-    <!-- Portfolio Modals -->
+    <!-- datastory Modals -->
     {%- for project in site.projects -%}
 {% assign ws = '' %}
 
     <!-- Modal {{ project.id | replace: '/projects/', '' }} -->
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="datastory-modal modal fade" id="datastoryModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
