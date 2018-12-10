@@ -2,10 +2,14 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/burger_salad.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  .container {
+      background-color: rgba(0, 0, 0, .2);
+      max-width: inherit;
+  }
   @include background-cover;
   .intro-text {
     padding-top: 150px;

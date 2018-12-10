@@ -120,7 +120,23 @@
 
                   <div>
                       {%- for image in project.bottom_images -%}
-                      <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6 mx-auto">
+                        {%- if image.explanations != null -%}
+                        <div class="col-12 mx-auto d-flex">
+                            {% capture img %}<img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6">{% endcapture %}
+                            {% cycle 'group1': img, '' %}
+                            <div class="col-6 d-flex justify-content-around align-items-center">
+                                {%- for explanation in image.explanations -%}
+                                <p>{{ explanation }}</p>
+                                {%- endfor -%}
+                            </div>
+                            {% cycle 'group2': '', img %}
+                        </div>
+                        {%- else -%}
+                        <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6 mx-auto">
+                            {%- if image.explanation -%}
+                            <p class="col">{{ image.explanation }}</p>
+                            {%- endif -%}
+                        {%- endif -%}
                       {%- endfor -%}
                   </div>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
