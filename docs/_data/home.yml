@@ -13,14 +13,14 @@ team:
   members:
     - name: Icíar Lloréns Jover
       role: Lead Thinker
-      img: img/team/1.jpg
+      img: img/sushi.jpeg
 
     - name: Yassine Zouaghi
       role: Lead Grapher
-      img: img/team/2.jpg
+      img: img/curry.jpg
 
     - name: Guillaume Vizier
       role: Lead Tinkerer
-      img: img/team/3.jpg
+      img: img/pates.jpg
 
   text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
