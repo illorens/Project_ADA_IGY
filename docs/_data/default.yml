@@ -4,12 +4,6 @@ menu-string: Menu
 
 copyright: Copyright &copy; Your Website 2018
 
-quicklinks:
-  - title: Privacy Policy
-    url: '#'
-  - title: Terms of Use
-    url: '#'
-
 modal:
   close-icon: 'fa fa-times'
   close-string: 'Back to the data story'

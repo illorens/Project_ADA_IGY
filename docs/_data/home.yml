@@ -9,7 +9,7 @@ datastory:
 
 team:
   heading: Our Amazing Team
-  subheading: Lorem ipsum dolor sit amet consectetur.
+  subheading: Alea jacta est.
   members:
     - name: Icíar Lloréns Jover
       role: Lead Thinker
@@ -23,4 +23,4 @@ team:
       role: Lead Tinkerer
       img: img/pates.jpg
 
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+  text: Life is not about the destination, but the journey.
