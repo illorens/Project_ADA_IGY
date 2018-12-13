@@ -55,16 +55,24 @@ layout: default
         <div class="row">
           {%- for project in site.projects -%}
           {% assign ws = '' %}
-          <div class="col-12 {% cycle '', 'inverted ' %}datastory-item" id="slide{{ project.id | replace: '/projects/', '' }}">
+          <div class="col-12 datastory-item d-flex flex-row justify-content-center align-items-center" id="slide{{ project.id | replace: '/projects/', '' }}">
+              {% capture button %}
+              {% if project.content != project.excerpt %}
             <a class="datastory-link col-md-4" data-toggle="modal" href="#datastoryModal{{ project.id | replace: '/projects/', '' }}">
               <div class="datastory-hover">
                 <div class="datastory-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
+                    <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
               <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
             </a>
-            <div class="datastory-caption col-md-8">
+            {% else %}
+            <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
+            {% endif %}
+            </a>
+            {% endcapture %}
+            {% cycle 'group1': button, '' %}
+            <div class="datastory-caption col-md-8 text-justify">
               <h2 class="text-uppercase">{{ project.title }}</h2>
               <!--p class="text-muted">{{ project.category }}</p-->
               {%- if project.question -%}
@@ -79,6 +87,7 @@ layout: default
                     <li>{{ site.data.default.modal.category-string }}{{ project.category }}</li>
                   </ul-->
             </div>
+            {% cycle 'group2': '', button %}
           </div>
           {%- endfor -%}
         {% assign ws = '' %}
