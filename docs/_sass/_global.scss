@@ -96,3 +96,8 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+
+.img-fluid {
+    height: 100% !important;
+}
