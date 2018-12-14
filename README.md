@@ -48,6 +48,20 @@ We linked the cities to their administrative zones (arrondissements, departments
 
 To draw our maps, we used the data available at this address: https://github.com/gregoiredavid/france-geojson.
 
+# A list of internal milestones up until project milestone 4
+Here is a tentative planning for the Project Presentation: 
+
+1. Select the keypoints of our research. Pro-tip: a short list that can explain the project in one sentence.
+2. Select the visualizations that best sum up our research. One visualization per keypoint.
+3. Modify them so as to be completely self-informative in a static media (unlike interactive maps)
+4. Build the poster around the keypoints and visualizations.
+5. Build the presentation around the poster. Use concise vocabulary and short sentences. 
+
+# Contributions from each team member
+
+* Icíar: data cleaning, dimensionality reduction (coding and decision-making), clustering (coding the DBSCAN algorithm), correlation analysis (visualization of the matrices, implementation of the generalized Pearson test). Implementation of a function allowing to visualize data in static Folium Maps that takes care of missing data. For the data story, text writing.
+
+
 # A list of internal milestones up until project milestone 2
 Here is a tentative planning for the next project milestone: 
 
