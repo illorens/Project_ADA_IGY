@@ -55,7 +55,7 @@ layout: default
         <div class="row">
           {%- for project in site.projects -%}
           {% assign ws = '' %}
-          <div class="col-12 datastory-item d-flex flex-column flex-lg-row justify-content-center align-items-end" id="slide{{ project.id | replace: '/projects/', '' }}">
+          <div class="col-12 datastory-item d-flex flex-column flex-lg-row justify-content-center align-items-end position-relative" id="slide{{ project.id | replace: '/projects/', '' }}">
               {% capture button %}
               {% if project.content != project.excerpt %}
             <a class="datastory-link col-lg-4 col-12 text-center" data-toggle="modal" href="#datastoryModal{{ project.id | replace: '/projects/', '' }}">
