@@ -16,7 +16,7 @@ header.masthead {
     padding-bottom: 100px;
     .intro-lead-in {
       font-size: 22px;
-      font-style: italic;
+      //font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
       @include serif-font;
@@ -37,7 +37,7 @@ header.masthead {
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 40px;
-        font-style: italic;
+        //font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
         @include serif-font;
