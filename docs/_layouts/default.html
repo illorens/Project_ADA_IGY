@@ -134,7 +134,7 @@
                             {% cycle 'group2': '', img %}
                         </div>
                         {%- else -%}
-                        <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6 mx-auto">
+                        <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-12 mx-auto">
                             {%- if image.explanation -%}
                             <p class="col">{{ image.explanation }}</p>
                             {%- endif -%}
