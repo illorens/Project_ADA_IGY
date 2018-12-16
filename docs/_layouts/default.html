@@ -117,7 +117,9 @@
                   <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image.url }}" alt="{{ project.image.alt }}" {{ project.image.custom_style }}>
                   {% endif %}
                   {% assign ws = '' %}
+                  <div class="col-10 mx-auto">
                   {{- project.content -}}
+                  </div>
                   {% assign ws = '' %}
 
                   <div class="d-flex">
