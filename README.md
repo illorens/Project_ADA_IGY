@@ -80,9 +80,8 @@ Planning from Milestone 3 to Milestone 4 (project presentation):
 
 * Icíar: data cleaning, dimensionality reduction (coding and decision-making), clustering (coding the DBSCAN algorithm), correlation analysis (visualization of the matrices, implementation of the generalized Pearson test). Implementation of a function allowing to visualize data in static Folium Maps that takes care of missing data. For the data story, text writing.
 Implementing the structure of the notebook and the order of the data story.
-* TODO: Yassine fill this shit
 * Guillaume: data cleaning, interactive maps, distribution of the nutrition grades, code cleaning and documentation. Responsible for the design and structure of the website. Gathered random quotes and images for the website =)
-
+*Yassine: creation of custom nutritional scores, Mutual Information (and PCA code and decision-making leading to mutual information), Map visualization with Bokeh (interactive but not dynamic), Interactive visualization of the correlation analysis
 
 Project Organization
 ------------
