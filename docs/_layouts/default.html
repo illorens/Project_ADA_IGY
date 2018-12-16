@@ -111,7 +111,11 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase text-center">{{ project.title }}</h2>
                   <p class="item-intro text-muted">{{ project.description }}</p>
+                  {%- if project.image contains 'html' %}
+                  {% include {{ project.image }} %}
+                  {% else %}
                   <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image }}" alt="">
+                  {% endif %}
                   {% assign ws = '' %}
                   {{- project.content -}}
                   {% assign ws = '' %}

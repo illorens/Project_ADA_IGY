@@ -154,7 +154,30 @@
       }
     }
   }
-  .modal-backdrop {
-
-  }
 }
+
+.bk-root {
+    padding-bottom: 60px;
+}
+.bk-logo.bk-logo-small {
+    display: none !important;
+}
+.bk-widget-box.bk-layout-fixed {
+    margin-left: auto;
+    margin-right: auto;
+    width: unset !important;
+}
+
+.bk-widget.bk-layout-fixed {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}
+
