@@ -3,9 +3,6 @@
   .datastory-item {
     right: 0;
     margin: 0 0 15px;
-    .datastory-link.col-lg-4.col-12.text-center {
-        padding: 0px !important;
-    }
     .datastory-link {
       position: relative;
       display: inline-block;
@@ -13,7 +10,7 @@
       cursor: pointer;
       .datastory-hover {
         position: absolute;
-        width: calc(100% - 30px);
+        width: calc(100% - 15px);
         height: 100%;
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;

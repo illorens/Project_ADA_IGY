@@ -58,8 +58,8 @@ layout: default
           <div class="col-12 datastory-item d-flex flex-column flex-lg-row justify-content-center align-items-end position-relative" id="slide{{ project.id | replace: '/projects/', '' }}">
               {% capture button %}
               {% if project.content != project.excerpt %}
-            <a class="datastory-link col-lg-4 col-12 text-center" data-toggle="modal" href="#datastoryModal{{ project.id | replace: '/projects/', '' }}">
-              <div class="datastory-hover">
+              <a class="datastory-link col-lg-4 col-12 text-center" data-toggle="modal" href="#datastoryModal{{ project.id | replace: '/projects/', '' }}" {% cycle 'link': 'style="padding-left: 0px !important"', 'style="padding-right: 0px !important"' %}>
+              <div class="datastory-hover" {% cycle 'link-hover': 'style="padding-left: 0px !important"', 'style="padding-right: 0px !important"' %}>
                 <div class="datastory-hover-content">
                     <span style="font-size: 25pt; font-weight: bold;">Read more</strong>
                 </div>
@@ -69,7 +69,6 @@ layout: default
             {% else %}
             <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
             {% endif %}
-            </a>
             {% endcapture %}
             {% cycle 'group1': button, '' %}
             <div class="datastory-caption col-12 col-lg-8 text-justify">
