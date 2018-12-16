@@ -167,6 +167,10 @@
     margin-right: auto;
     width: unset !important;
 }
+.bk-grid.bk-grid-column.bk-layout-fixed {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .bk-widget.bk-layout-fixed {
     flex-wrap: nowrap;
