@@ -19,7 +19,7 @@ for this part of the world.
 
 # Data story
 
-(url)
+You can find our data story at: https://illorens.github.io/Project_ADA_IGY/
 
 # Research questions
 
