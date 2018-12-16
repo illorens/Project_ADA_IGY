@@ -120,7 +120,7 @@
                   {{- project.content -}}
                   {% assign ws = '' %}
 
-                  <div>
+                  <div class="d-flex">
                       {%- for image in project.bottom_images -%}
                         {%- if image.explanations != null -%}
                         <div class="col-12 mx-auto d-flex">
@@ -134,7 +134,7 @@
                             {% cycle 'group2': '', img %}
                         </div>
                         {%- else -%}
-                        <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-12 mx-auto">
+                        <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-{% if image.small %}7{% else %}12{% endif %} mx-auto">
                             {%- if image.explanation -%}
                             <p class="col">{{ image.explanation }}</p>
                             {%- endif -%}
