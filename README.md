@@ -1,9 +1,9 @@
 Projet
 ==============================
 
-Project for the ADA lecture at the EPFL, 2018.
+Project for the ADA course at EPFL, 2018.
 
-# Obesity, food availability and social inequalities
+# Food & Wealth
 
 # Abstract
 Rising rates of obesity in industrialized societies have been blamed on an increased consumption of
@@ -17,6 +17,10 @@ two aspects, we intend to explore the links between obesity, healthy food availa
 economic environment. We wish to focus our analysis on France, as Open Food Facts presents more data
 for this part of the world.
 
+# Data story
+
+(url)
+
 # Research questions
 
 - How can we combine nutritional values such as sugar or fat content, energy and nutrition score in
@@ -27,7 +31,7 @@ environments ?
 - Is there really a difference in product comsumption between these regions ? If so, can it
 be related to the distance traveled by the product (influencing price and availability) ?
 
-# Dataset
+# Dataset(s)
 
 In order to conduct our analysis on the quality of the sold food items, we will use the Open Food Facts dataset. Indeed, this dataset is composed of food items sold around the world, each having several features such as ingredients, cities where the product is sold or nutrition score. The format of this Dataset is CSV, which means we can use the Pandas functionalities for the analysis of this dataset. Its size is 1.6 GB.
 
