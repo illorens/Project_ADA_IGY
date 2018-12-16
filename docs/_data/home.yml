@@ -1,15 +1,14 @@
 intro:
   lead-in: "Welcome To Our Data Story!"
-  heading: Let's talk about food
+  heading: Let's talk about food and wealth
   btn: Tell Me More
 
 datastory:
-  heading: Data Story
+  heading: Food & Wealth
   subheading: '"First we eat, then we do everything else." M.F.K. Fisher'
 
 team:
   heading: Our Amazing Team
-  subheading: Alea jacta est.
   members:
     - name: Icíar Lloréns Jover
       role: Lead Thinker
@@ -23,4 +22,4 @@ team:
       role: Lead Tinkerer
       img: img/pates.jpg
 
-  text: Life is not about the destination, but the journey.
+  text: “If you think your data is clean, you haven’t looked at it hard enough.” ― Eben Hewitt
