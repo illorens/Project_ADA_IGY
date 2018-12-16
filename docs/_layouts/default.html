@@ -111,16 +111,18 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase text-center">{{ project.title }}</h2>
                   <p class="item-intro text-muted">{{ project.description }}</p>
-                  {%- if project.image contains 'html' %}
-                  {% include {{ project.image }} %}
+                  {%- if project.image.url contains 'html' %}
+                  {% include {{ project.image.url }} %}
                   {% else %}
-                  <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image }}" alt="">
+                  <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image.url }}" alt="{{ project.image.alt }}" {{ project.image.custom_style }}>
                   {% endif %}
                   {% assign ws = '' %}
+                  <div class="col-10 mx-auto">
                   {{- project.content -}}
+                  </div>
                   {% assign ws = '' %}
 
-                  <div>
+                  <div class="d-flex">
                       {%- for image in project.bottom_images -%}
                         {%- if image.explanations != null -%}
                         <div class="col-12 mx-auto d-flex">
@@ -134,14 +136,20 @@
                             {% cycle 'group2': '', img %}
                         </div>
                         {%- else -%}
-                        <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6 mx-auto">
+                            {%- if image.url contains 'html' %}
+                            {% include {{ image.url }} %}
+                            {% else %}
+                            <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid d-block mx-auto">
+                            {% endif %}
                             {%- if image.explanation -%}
                             <p class="col">{{ image.explanation }}</p>
                             {%- endif -%}
                         {%- endif -%}
                       {%- endfor -%}
                   </div>
-                  <p>{{- project.bottom_text -}}</p>
+                  {% for text in project.bottom_text %}
+                  <p>{{- text -}}</p>
+                  {% endfor %}
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="{{ site.data.default.modal.close-icon }}"></i>
                     {{ site.data.default.modal.close-string }}</button>
