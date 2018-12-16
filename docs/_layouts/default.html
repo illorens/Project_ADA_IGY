@@ -126,7 +126,15 @@
                       {%- for image in project.bottom_images -%}
                         {%- if image.explanations != null -%}
                         <div class="col-12 mx-auto d-flex">
-                            {% capture img %}<img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6">{% endcapture %}
+                            {% capture img %}
+                            {% if image.url contains 'html' %}
+                            <div class="col-6">
+                                {% include {{ image.url }} %}
+                            </div>
+                            {% else %}
+                                <img src="{{ assets_path }}{{ image.url }}" alt="{{ image.alt }}" class="img-fluid col-6">
+                            {% endif %}
+                            {% endcapture %}
                             {% cycle 'group1': img, '' %}
                             <div class="col-6 d-flex justify-content-around align-items-center">
                                 {%- for explanation in image.explanations -%}
