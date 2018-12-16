@@ -81,6 +81,8 @@ Planning from Milestone 3 to Milestone 4 (project presentation):
 * Icíar: data cleaning, dimensionality reduction (coding and decision-making), clustering (coding the DBSCAN algorithm), correlation analysis (visualization of the matrices, implementation of the generalized Pearson test). Implementation of a function allowing to visualize data in static Folium Maps that takes care of missing data. For the data story, text writing.
 Implementing the structure of the notebook and the order of the data story.
 
+* TODO: Yassine and Guillaume fill this shit
+
 
 Project Organization
 ------------
