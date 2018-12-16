@@ -80,8 +80,8 @@ Planning from Milestone 3 to Milestone 4 (project presentation):
 
 * Icíar: data cleaning, dimensionality reduction (coding and decision-making), clustering (coding the DBSCAN algorithm), correlation analysis (visualization of the matrices, implementation of the generalized Pearson test). Implementation of a function allowing to visualize data in static Folium Maps that takes care of missing data. For the data story, text writing.
 Implementing the structure of the notebook and the order of the data story.
-
-* TODO: Yassine and Guillaume fill this shit
+* TODO: Yassine fill this shit
+* Guillaume: data cleaning, interactive maps, distribution of the nutrition grades, code cleaning and documentation. Responsible for the design and structure of the website. Gathered random quotes and images for the website =)
 
 
 Project Organization
@@ -95,38 +95,12 @@ Project Organization
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── docs               <- Code for the data story
     │
     ├── notebooks          <- Jupyter notebooks.
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    └── src                <- Source code for use in this project.
-        ├── __init__.py    <- Makes src a Python module
-        │
-        ├── data           <- Scripts to download or generate data
-        │   └── make_dataset.py
-        │
-        ├── features       <- Scripts to turn raw data into features for modeling
-        │   └── build_features.py
-        │
-        ├── models         <- Scripts to train models and then use trained models to make
-        │   │                 predictions
-        │   ├── predict_model.py
-        │   └── train_model.py
-        │
-        └── visualization  <- Scripts to create exploratory and results oriented visualizations
-            └── visualize.py
-
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+                              generated with `pip freeze > requirements.txt`
 
 --------
 
