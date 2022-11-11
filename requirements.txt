@@ -59,7 +59,7 @@ pyparsing==2.2.2
 pyproj==1.9.5.1
 PySAL==1.14.4.post2
 pyshp==1.2.10
-pyspark==2.3.2
+pyspark==3.2.2
 python-dateutil==2.7.3
 pytz==2018.5
 PyYAML==3.13
